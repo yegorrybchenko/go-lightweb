@@ -1,4 +1,5 @@
 CREATE TABLE books(
-	name varchar(20),
-	description varchar(100)
+	id BIGINT,
+	name VARCHAR(20),
+	description VARCHARs(100)
 );

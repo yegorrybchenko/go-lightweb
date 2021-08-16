@@ -7,9 +7,11 @@ import (
 )
 
 func InitServer() *gin.Engine {
+	booksHandler := handlers.NewBooks()
+
 	router := gin.Default()
 
-	router.GET("/hello", handlers.HelloWorld)
+	router.GET("/books/:id", booksHandler.Get)
 
 	return router
 }

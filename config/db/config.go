@@ -8,7 +8,7 @@ import (
 var connection *gorm.DB
 
 func init() {
-	dsn := "host=localhost user=postgres password=postgres dbname=postgres port=9920"
+	dsn := "host=localhost user=postgres password=postgres dbname=golightweb port=5432"
 	var err error
 	connection, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {

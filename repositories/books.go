@@ -15,7 +15,7 @@ func NewBooksRepository() *BooksRepository {
 	return &BooksRepository{db.Connection()}
 }
 
-func (r *BooksRepository) Get(name string) (*models.Book, error) {
-	book := models.Book{Name: name}
+func (r *BooksRepository) Get(id int) (*models.Book, error) {
+	book := models.Book{Id: id}
 	return &book, r.db.First(&book).Error
 }
