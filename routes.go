@@ -12,6 +12,7 @@ func InitServer() *gin.Engine {
 	router := gin.Default()
 
 	router.GET("/books/:id", booksHandler.Get)
+	router.POST("/books", booksHandler.Create)
 
 	return router
 }

@@ -1,5 +1,5 @@
 CREATE TABLE books(
-	id BIGINT,
+	id SERIAL PRIMARY KEY,
 	name VARCHAR(20),
-	description VARCHARs(100)
+	description VARCHAR(100)
 );
