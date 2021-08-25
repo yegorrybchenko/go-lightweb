@@ -6,9 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/macmaczhl/golightweb/forms"
-	"github.com/macmaczhl/golightweb/models"
-	"github.com/macmaczhl/golightweb/repositories"
+	"github.com/macmaczhl/golightweb/internal/forms"
+	"github.com/macmaczhl/golightweb/internal/models"
+	"github.com/macmaczhl/golightweb/internal/repositories"
 )
 
 type Books struct {

@@ -1,9 +1,9 @@
-package main
+package config
 
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/macmaczhl/golightweb/handlers"
+	"github.com/macmaczhl/golightweb/internal/handlers"
 )
 
 func InitServer() *gin.Engine {

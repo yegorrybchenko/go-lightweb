@@ -3,8 +3,8 @@ package repositories
 import (
 	"gorm.io/gorm"
 
-	"github.com/macmaczhl/golightweb/config/db"
-	"github.com/macmaczhl/golightweb/models"
+	"github.com/macmaczhl/golightweb/internal/config/db"
+	"github.com/macmaczhl/golightweb/internal/models"
 )
 
 type BooksRepository struct {
